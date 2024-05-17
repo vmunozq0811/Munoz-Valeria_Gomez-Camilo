@@ -20,15 +20,6 @@ public class OdontologoService {
         odontologoDAOCollectionImpl= new OdontologoDAOCollectionImpl();
     }
 
-
-    public Odontologo guardar(Odontologo odontologo) {
-        return odontologoDAOH2.guardar(odontologo);
-    }
-
-    public List<Odontologo> listarTodos() {
-        OdontologoDAO odontologoDAO = null;
-        return odontologoDAO.listarTodos();
-    }
     public Odontologo guardarOdontologo(Odontologo odontologo){
         return odontologoDAOH2.guardar(odontologo);
     }
