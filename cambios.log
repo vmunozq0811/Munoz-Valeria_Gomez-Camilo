@@ -15,3 +15,11 @@ INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID) VA
 [2024-05-16 20:26:42] [ INFO ] [BD:29] tabla creada con exito
 [2024-05-16 20:26:42] [ INFO ] [PacienteDAOH2:23] iniciando la operacion de buscado de un paciente con id : 2
 [2024-05-16 20:26:42] [ INFO ] [DomicilioDAOH2:22] iniciando la busqueda de un domicilio con id: 2
+[2024-05-16 21:07:03] [ WARN ] [BD:38] Syntax error in SQL statement "INSERT INTO DOMICILIOS  (CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES ('Siempre Viva',742,'Springfield','USA'),('Av. Uruguay',345,'Punta del Este','Uruguay')[*]INSERT INTO ODONTOLOGOS ( NOMBRE, APELLIDO,MATRICULA) VALUES ('Sara', 'Fonseca','AR1234'), ( 'Sofia', 'Torres','CO3456');"; SQL statement:
+INSERT INTO DOMICILIOS  (CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES ('Siempre Viva',742,'Springfield','USA'),('Av. Uruguay',345,'Punta del Este','Uruguay')INSERT INTO ODONTOLOGOS ( NOMBRE, APELLIDO,MATRICULA) VALUES ('Sara', 'Fonseca','AR1234'), ( 'Sofia', 'Torres','CO3456'); [42000-224]
+[2024-05-16 21:08:48] [ WARN ] [BD:38] Syntax error in SQL statement "INSERT INTO DOMICILIOS  (CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES ('Siempre Viva',742,'Springfield','USA'),('Av. Uruguay',345,'Punta del Este','Uruguay')[*]INSERT INTO ODONTOLOGOS ( NOMBRE, APELLIDO,MATRICULA) VALUES ('Sara', 'Fonseca','AR1234'), ( 'Sofia', 'Torres','CO3456');"; SQL statement:
+INSERT INTO DOMICILIOS  (CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES ('Siempre Viva',742,'Springfield','USA'),('Av. Uruguay',345,'Punta del Este','Uruguay')INSERT INTO ODONTOLOGOS ( NOMBRE, APELLIDO,MATRICULA) VALUES ('Sara', 'Fonseca','AR1234'), ( 'Sofia', 'Torres','CO3456'); [42000-224]
+[2024-05-16 21:08:48] [ INFO ] [OdontologoDAOH2:22] Insertando odontologo
+[2024-05-16 21:08:48] [ INFO ] [OdontologoDAOH2:30] Insertado con exito
+[2024-05-16 21:08:48] [ INFO ] [OdontologoDAOH2:22] Insertando odontologo
+[2024-05-16 21:08:48] [ INFO ] [OdontologoDAOH2:30] Insertado con exito
