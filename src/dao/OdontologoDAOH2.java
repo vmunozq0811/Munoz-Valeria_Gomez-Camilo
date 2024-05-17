@@ -24,8 +24,12 @@ public class OdontologoDAOH2 implements iDao<Odontologo> {
             connection= BD.getConnection();
             PreparedStatement psinsert= connection.prepareStatement(SQL_INSERT);
             psinsert.setInt(1,odontologo.getId());
+            psinsert.setString(2, odontologo.getNombre());
+            psinsert.setString(3, odontologo.getApellido());
+            psinsert.setString(3, odontologo.getMatricula());
         } catch (Exception e){
             logger.warn(e.getMessage());
         }
+        return odontologo;
     }
 }
