@@ -41,14 +41,6 @@ public class Odontologo {
         return nombre;
     }
 
-    public String getApellido() {
-        return apellido;
-    }
-
-    public void setMatricula(String matricula) {
-        this.matricula = matricula;
-    }
-
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
