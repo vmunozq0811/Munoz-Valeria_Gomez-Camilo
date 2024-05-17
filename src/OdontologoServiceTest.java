@@ -18,5 +18,7 @@ public class OdontologoServiceTest {
 
         odontologoDAO.guardar(odontologo1);
         odontologoDAO.guardar(odontologo2);
+
+
     }
 }
