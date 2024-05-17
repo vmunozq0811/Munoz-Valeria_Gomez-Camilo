@@ -14,7 +14,7 @@ public class Odontologo {
         this.matricula = matricula;
     }
 
-    public Integer getMatricula() {
+    public String getMatricula() {
         return matricula;
     }
 
@@ -26,7 +26,7 @@ public class Odontologo {
         return apellido;
     }
 
-    public void setMatricula(Integer matricula) {
+    public void setMatricula(String matricula) {
         this.matricula = matricula;
     }
 

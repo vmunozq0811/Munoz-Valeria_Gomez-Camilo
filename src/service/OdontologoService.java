@@ -7,7 +7,7 @@ import model.Odontologo;
 import java.util.List;
 
 public class OdontologoService {
-    private OdontologoDAO odontologoDAO;
+    private final OdontologoDAO odontologoDAO;
 
     public OdontologoService(OdontologoDAO odontologoDAO) {
         this.odontologoDAO = odontologoDAO;
