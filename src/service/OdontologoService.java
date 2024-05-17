@@ -2,22 +2,27 @@
 package service;
 
 import dao.OdontologoDAO;
+import dao.OdontologoDAOCollectionImpl;
+import dao.OdontologoDAOH2;
 import model.Odontologo;
-
 import java.util.List;
 
 public class OdontologoService {
-    private final OdontologoDAO odontologoDAO;
+    private OdontologoDAO odontologoDAOH2;
+    private OdontologoDAO odontologoDAOCollectionImpl;
 
-    public OdontologoService(OdontologoDAO odontologoDAO) {
-        this.odontologoDAO = odontologoDAO;
+    public OdontologoService() {
+        odontologoDAOH2 = (OdontologoDAO) new OdontologoDAOH2();
+        odontologoDAOCollectionImpl= new OdontologoDAOCollectionImpl();
     }
 
-    public void guardarOdontologo(Odontologo odontologo) {
-        odontologoDAO.guardarOdontologo(odontologo);
+
+    public Odontologo guardar(Odontologo odontologo) {
+        return odontologoDAOH2.guardar(odontologo);
     }
 
-    public List<Odontologo> listarOdontologos() {
-        return odontologoDAO.listarOdontologos();
+    public List<Odontologo> listarTodos() {
+        OdontologoDAO odontologoDAO = null;
+        return odontologoDAO.listarTodos();
     }
 }

@@ -9,12 +9,13 @@ public class OdontologoDAOCollectionImpl implements OdontologoDAO {
     private List<Odontologo> odontologos = new ArrayList<>();
 
     @Override
-    public void guardarOdontologo(Odontologo odontologo) {
+    public Odontologo guardar(Odontologo odontologo) {
         odontologos.add(odontologo);
+        return odontologo;
     }
 
     @Override
-    public List<Odontologo> listarOdontologos() {
-        return odontologos;
+    public List<Odontologo> listarTodos() {
+        return new ArrayList<>(odontologos);
     }
 }

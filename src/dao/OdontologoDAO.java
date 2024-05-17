@@ -5,8 +5,6 @@ import model.Odontologo;
 import java.util.List;
 
 public interface OdontologoDAO {
-    void guardarOdontologo(Odontologo odontologo);
-    List<Odontologo> listarOdontologos();
+    Odontologo guardar(Odontologo odontologo);
+    List<Odontologo> listarTodos();
 }
-
-
