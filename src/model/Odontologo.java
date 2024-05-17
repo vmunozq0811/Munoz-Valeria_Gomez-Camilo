@@ -3,19 +3,15 @@ package model;
 import java.time.LocalDate;
 
 public class Odontologo {
-    private Integer matricula;
+    private Integer Id;
+    private String matricula;
     private String nombre;
     private String apellido;
 
-    public Odontologo(String nombre, String apellido, String cedula, LocalDate fechaIngreso, Domicilio domicilio) {
+    public Odontologo(String nombre, String apellido, String matricula) {
         this.nombre = nombre;
         this.apellido = apellido;
-    }
-
-    public Odontologo(Integer id, String nombre, String apellido, String cedula, LocalDate fechaIngreso, Domicilio domicilio) {
         this.matricula = matricula;
-        this.nombre = nombre;
-        this.apellido = apellido;
     }
 
     public Integer getMatricula() {
