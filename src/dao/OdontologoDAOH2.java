@@ -5,6 +5,7 @@ import org.apache.log4j.Logger;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.util.List;
 
 public class OdontologoDAOH2 implements iDao<Odontologo> {
 
@@ -31,5 +32,26 @@ public class OdontologoDAOH2 implements iDao<Odontologo> {
             logger.warn(e.getMessage());
         }
         return odontologo;
+    }
+
+    @Override
+    public Odontologo buscarPorId(Integer id) {
+        return null;
+    }
+
+    @Override
+    public void eliminar(Integer id) {
+
+    }
+
+    @Override
+    public void actualizar(Odontologo odontologo) {
+
+    }
+
+    @Override
+    public List<Odontologo> buscarTodos() {
+
+        return null;
     }
 }
