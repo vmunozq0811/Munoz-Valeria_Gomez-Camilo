@@ -8,7 +8,7 @@ import java.sql.PreparedStatement;
 
 public class OdontologoDAOH2 implements iDao<Odontologo> {
 
-    private static final Logger logger= Logger.getLogger(PacienteDAOH2.class);
+    private static final Logger logger= Logger.getLogger(OdontologoDAOH2.class);
     /**
      * private Integer matricula;
      *     private String nombre;
